@@ -1,0 +1,120 @@
+.container {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.icon {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .grid {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 992px) {
+  .heading {
+    font-size: 22px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .icon {
+    font-size: 26px;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .grid {
+    max-width: 500px;
+  }
+
+  .card {
+    padding: 12px;
+  }
+
+  .icon {
+    font-size: 24px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 18px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .icon {
+    font-size: 22px;
+  }
+
+  .title {
+    font-size: 13px;
+  }
+}
