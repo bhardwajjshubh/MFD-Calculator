@@ -19,7 +19,7 @@ import LifeInsuranceCalc from "./components/JSXFile/LifeInsurance";
 import Sidebar from "./components/JSXFile/Sidebar";
 
 const App = () => {
-  const [showCalculators, setShowCalculators] = useState(false);
+  const [showCalculators, setShowCalculators] = useState(true);
   const [selectedCalculator, setSelectedCalculator] = useState(null);
   const [showSidebar, setShowSidebar] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
